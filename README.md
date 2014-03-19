@@ -18,7 +18,7 @@ A Java program was written that converts all the XML files into a MySQL database
 
 The dump-rdf tool uses [D2RQ](http://d2rq.org/) to dump the contents of the whole relational database into a single RDF file. This can be done with or without a D2RQ mapping file. If a mapping file is specified, then the tool will use it to translate the database contents to RDF. If no mapping file is specified, then the tool will use the default mapping of generate-mapping for the translation.
 
-In the case of ARIADNE, we create a mapping file the maps the RDB structure to RDF triples. The mapping file is available at [here](http://www.erajabi.com/uploads/ariadne_keywords.n3).
+In the case of ARIADNE, we create a mapping file the maps the RDB structure to RDF triples. The mapping file is available at [here](http://www.erajabi.com/uploads/ariadne_keywords.n3). In this mapping file, we exposed the following learning object elements: Title, Language,Keyword, Coverage, Technical.location, Right.cost, and Right.Copyright
 
 We used the following code to create the RDF dump:
 
