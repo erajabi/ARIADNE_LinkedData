@@ -44,6 +44,8 @@ First we loaded the RDF dump into a triple store by making use of tdbloader comm
 
 `tdbloader --loc=DB ariadne_dump.nt`
 
+Remember to make bin folder in Jena executable and set the PATH to bin folder. 
+
 * DB is an existing TDB database folder. Create an empty one if it does not exist.
 * The second parameter is the RDF dump
 
