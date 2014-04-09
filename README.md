@@ -54,3 +54,19 @@ Then we ran [Jena Fuseki ](http://jena.apache.org/documentation/serving_data/) b
 `fuseki-server --loc=DB /ds` 
 
 For more information about configuring Jena Fuseki you can read [here ](http://jena.apache.org/documentation/serving_data/)
+
+Some notes for developing:
+
+- If you are using a Linux system, you can redirect your default website using [nginx] (http://nginx.org/)
+- For redirect, you have to change the config file at /etc/ngnix/ngnix.conf , the following lines:
+`http{
+    ...
+   server {
+	  listen 80 default;
+	  location / {
+		 proxy_pass http://83.212.168.39:3030;
+		 #proxy_redirect http://83.212.168.39/  http://83.212.168.39:3030/index.html;
+	  }
+	}   
+  ....
+}`
