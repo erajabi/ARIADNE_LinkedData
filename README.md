@@ -59,7 +59,7 @@ Some notes for developing:
 
 - If you are using a Linux system, you can redirect your default website using [nginx] (http://nginx.org/)
 - For redirect, you have to change the config file at /etc/ngnix/ngnix.conf , the following lines:
-`http{
+http{
     ...
    server {
 	  listen 80 default;
@@ -69,4 +69,4 @@ Some notes for developing:
 	  }
 	}   
   ....
-}`
+}
