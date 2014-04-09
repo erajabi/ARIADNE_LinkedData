@@ -57,9 +57,9 @@ For more information about configuring Jena Fuseki you can read [here ](http://j
 
 Some notes for developing:
 
-- If you are using a Linux system, you can redirect your default website using [nginx] (http://nginx.org/)
+- If you are using a Linux system, you can redirect your default website by installing [nginx] (http://nginx.org/)
 - For redirect, you have to change the config file at /etc/ngnix/ngnix.conf , the following lines:
-http{
+`http{
     ...
    server {
 	  listen 80 default;
@@ -69,4 +69,5 @@ http{
 	  }
 	}   
   ....
-}
+}`
+- Then reload the ngnix : /etc/init.d/ngnix reload
