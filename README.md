@@ -57,15 +57,14 @@ For more information about configuring Jena Fuseki you can read [here ](http://j
 
 Some notes for developing:
 
-- If you are using a Linux system, you can redirect your default website by installing [nginx] (http://nginx.org/)
+- If you are using a Linux system, you can redirect your website to fuseki page (at 3030) by installing [nginx] (http://nginx.org/)
 - For redirect, you have to change the config file at /etc/ngnix/ngnix.conf , the following lines:
 `http{
     ...
    server {
 	  listen 80 default;
 	  location / {
-		 proxy_pass http://83.212.168.39:3030;
-		 #proxy_redirect http://83.212.168.39/  http://83.212.168.39:3030/index.html;
+		 proxy_pass http://IPaddress:3030;
 	  }
 	}   
   ....
