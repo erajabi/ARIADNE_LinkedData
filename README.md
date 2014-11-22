@@ -70,3 +70,9 @@ Some notes for developing:
   ....
 }`
 - Then reload the ngnix : /etc/init.d/ngnix reload
+
+Troubleshooting :
+
+Is the SPARQL endpoint is running on port 3030: sudo netstat -lpn |grep :3030
+
+
